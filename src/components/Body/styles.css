@@ -1,0 +1,12 @@
+div#mainv{
+    height: 949px;
+    background-image: url("./2.png");
+    background-size: 2000px;
+    background-color: #E47752;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*#D95129;*/
+   
+}

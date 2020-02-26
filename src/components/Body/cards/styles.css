@@ -1,0 +1,62 @@
+div#main-div{
+    height: 23%;
+    width: 17%;
+    background-color:rgba(239,140,89, 0.8);
+    border-radius: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+    /*rgba(254,161,25, 0.6);*/
+
+}
+
+div#row_vertical{
+    border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    height: 40%;
+    width: 5%;
+    border-color: #FFF;
+}
+
+div#num{
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    display: flex;
+    /* background-color: blue; */
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#info{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    width: 40%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#main-div:hover div#info{
+    color:#1CA78B;
+}
+
+div#main-div:hover div#row_vertical{
+    border-color:#1CA78B;
+}
+
+div#main-div:hover div#num{
+    color:#1CA78B;
+}
+
+div#main-div:hover{
+    background-color: #FFF;
+    transform: scale(1.1);
+}
