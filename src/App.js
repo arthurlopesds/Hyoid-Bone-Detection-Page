@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.css';
 // import Header from './components/Header';
-import Body from './components/Body/'
+import Menu from './components/Menu'
 
 const App = () => (
 
   <div className="App">
-    <Body/>
+    <Menu/>
 
   </div>
 
