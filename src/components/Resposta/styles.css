@@ -1,11 +1,61 @@
-header#main-header{
-    width: 25%;
-    height: 300px;
-    font-size: 18px;
-    background: #333;
-    font-weight: bold;
-    color: #333;
+div{
+    margin: 0;
+    padding: 0;
+}
+div#main-resp{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div#result{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 900px;
+    /* background-color: darkgray; */
+}
+
+div#desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 900px;
+    /* background-color: indianred; */
+}
+
+div#result-interno{
+    width: 80%;
+    height: 70%;
+    background-color: blueviolet;
+    border-radius: 10px 10px;
+    
+}
+
+div#desc-interno{
+    width: 50%;
+    height: 70%;
+    background-color: lightblue;
+    border-radius: 10px 10px;
+}
+
+.btn-outline-primary {
+    color:#F16521;
+    background-color: white;
+    border-color: #F16521;   
+}
+
+.btn-outline-primary:hover{
+    color:white;
+    background-color: #F16521;
+    border-color: #F16521;
+
+}
+
+div#btn_download{
+    background-color: violet;
 }
