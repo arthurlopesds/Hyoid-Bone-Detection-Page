@@ -8,25 +8,28 @@ export default class Resposta extends React.Component{
             <div id="main-resp">
 
                 <div id="result">
+                    <span id="title_result">Resultado</span>
                     <div id="result-interno">
-                        sss
+                        
                     </div>
                     <div id="btn_download">
                         <ButtonToolbar>
-                                <Button variant="outline-primary">Download</Button>
+                            <Button>Download</Button>
                         </ButtonToolbar>
                     </div>
                 </div>
 
                 <div id="desc">
+                    <span id="title_desc">Descrição</span>
                     <div id="desc-interno">
-                        sss
-                    </div>
 
-                    <ButtonToolbar>
-                            <Button variant="outline-primary">Nova Detecção</Button>
-                    </ButtonToolbar>
-        
+                    </div>
+                    
+                    <div id="btn_nvdetect">
+                        <ButtonToolbar>
+                            <Button>Nova Detecção</Button>
+                        </ButtonToolbar>
+                    </div>
                 </div>
             </div>
         );

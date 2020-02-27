@@ -3,6 +3,9 @@ div{
     padding: 0;
 }
 div#main-resp{
+    height: 949px;
+    background-image: url(../../images/2.png);
+    background-size: 2000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +18,7 @@ div#result{
     flex-direction: column;
     width: 60%;
     height: 900px;
-    /* background-color: darkgray; */
+    /* background-color: black; */
 }
 
 div#desc{
@@ -31,7 +34,7 @@ div#desc{
 div#result-interno{
     width: 80%;
     height: 70%;
-    background-color: blueviolet;
+    background-color: #F16521;
     border-radius: 10px 10px;
     
 }
@@ -39,23 +42,66 @@ div#result-interno{
 div#desc-interno{
     width: 50%;
     height: 70%;
-    background-color: lightblue;
+    background-color: #F1F1F1;
     border-radius: 10px 10px;
 }
 
-.btn-outline-primary {
+.btn-primary{
     color:#F16521;
-    background-color: white;
-    border-color: #F16521;   
+    background-color: #FFF;
+    border-color: #F16521;
+    box-shadow: none;
 }
 
-.btn-outline-primary:hover{
+.btn-primary:hover{
     color:white;
     background-color: #F16521;
     border-color: #F16521;
+}
 
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    color:white;
+    background-color: #F16521;
+    border-color: #F16521;
+    
 }
 
 div#btn_download{
-    background-color: violet;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    /* background-color: red; */
+}
+
+div#btn_nvdetect{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    /* background-color: royalblue; */
+}
+
+span#title_result{
+    width: 80%;
+    height: 8%;
+    align-items: flex-end;
+    display: flex;
+    /* background-color: #F1F1F1; */
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F16521;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+span#title_desc{
+    width: 50%;
+    height: 8%;
+    align-items: flex-end;
+    display: flex;
+    /* background-color: #F122; */
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F16521;
+    font-weight: bold;
+    margin-top: 10px;
 }
