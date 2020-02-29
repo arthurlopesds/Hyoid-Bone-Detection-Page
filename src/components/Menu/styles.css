@@ -1,12 +1,106 @@
 div#mainv{
-    height: 949px;
+    height: 863px;
     background-image: url("../../images/2.png");
     background-size: 2000px;
     background-color: #E47752;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
     /*#D95129;*/
    
+}
+
+div#mainCard{
+    width: 70%;
+    background-color:rgba(239,140,89,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*#D95129;*/
+}
+/* 
+div#mainSlide{
+    background-color: blue;
+} */
+
+div#textSlide{
+    width: 100%;
+    height: 100%;
+    background-color:#FFF;
+    
+}
+
+h1{
+    color: black;
+}
+
+.btn-primary{
+    color:#F16521;
+    background-color: #FFF;
+    border-color: #F16521;
+    box-shadow: none;
+    margin: 4px;
+}
+
+.btn-primary:hover{
+    color:white;
+    background-color: #F16521;
+    border-color: #F16521;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    color:white;
+    background-color: #F16521;
+    border-color: #F16521;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1CA78B;
+    font-weight: bold;
+    text-decoration: underline #1CA78B;
+}
+header{
+    height: 250px;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+div#upload{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellowgreen; */
+}
+
+div#botao{
+    height:150px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-items: flex-start;
+    align-content: center;
+    padding-top: 20px;
+}
+
+div#btn_obj{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+ 
+}
+
+div#title_bnt_obj{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }

@@ -1,6 +1,6 @@
 div#main-div{
-    height: 23%;
-    width: 17%;
+    height: 30%;
+    width: 25%;
     background-color:rgba(239,140,89, 0.8);
     border-radius: 10px 10px;
     display: flex;
@@ -11,14 +11,37 @@ div#main-div{
 
 }
 
+.card{
+    height: 100%;
+    width: 100%;
+    background-color:rgba(239,140,89, 0.8);
+    border-radius: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+
+.card-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #1CA78B; */
+    
+}
+
 div#row_vertical{
     border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
     height: 40%;
-    width: 5%;
+    width: 10%;
     border-color: #FFF;
+    position: absolute;
+    
 }
 
-div#num{
+#num{
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFF;
@@ -31,32 +54,44 @@ div#num{
     align-items: center;
 }
 
-div#info{
+#info{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #FFF;
-    width: 40%;
+    width: 50%;
     height: 50%;
     /* background-color: brown; */
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-div#main-div:hover div#info{
+.card-body:hover{
+    z-index: 2;
+}
+
+.card:hover #info{
     color:#1CA78B;
 }
 
-div#main-div:hover div#row_vertical{
+.card:hover div#row_vertical{
     border-color:#1CA78B;
 }
 
-div#main-div:hover div#num{
+.card:hover #num{
     color:#1CA78B;
+}
+
+.card:hover{
+    background-color: #FFF;
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 div#main-div:hover{
     background-color: #FFF;
-    transform: scale(1.1);
+    transform: scale(1.0);
+    z-index: 2;
 }
