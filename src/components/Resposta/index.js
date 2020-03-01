@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button,ButtonToolbar} from 'react-bootstrap'
+
 import './styles.css';
 
 export default class Resposta extends React.Component{

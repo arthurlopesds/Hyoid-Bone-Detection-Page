@@ -1,7 +1,7 @@
 div#main-div{
     height: 30%;
-    width: 25%;
-    background-color:rgba(239,140,89, 0.8);
+    width: 80%;
+    /* background-color:rgba(239,140,89, 0.8); */
     border-radius: 10px 10px;
     display: flex;
     justify-content: center;
@@ -52,6 +52,7 @@ div#row_vertical{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #info{
@@ -91,7 +92,7 @@ div#row_vertical{
 }
 
 div#main-div:hover{
-    background-color: #FFF;
+    /* background-color: #FFF; */
     transform: scale(1.0);
     z-index: 2;
 }

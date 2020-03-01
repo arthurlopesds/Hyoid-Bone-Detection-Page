@@ -1,20 +1,69 @@
 import React from 'react';
 import {Card} from 'react-bootstrap'
+import Grid from '@material-ui/core/Grid'
+import { makeStyles } from '@material-ui/core/styles'
 
 import './styles.css';
 
-export default class Carde extends React.Component{
-    render(){
-        return(
-            <div id="main-div">
-                <Card onClick={this.props.chama}>
+
+const useStyles = makeStyles({
+    num:{
+        fontSize: '75px',
+        fontFamily:'Arial,Helvetica',
+        color: '#FFF',
+        display: 'flex',
+        // backgroundColor: 'blue',
+        width: '40%',
+        height: '50%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        '@media (max-width:600px)': {
+            fontSize: '2.0rem',
+          },
+        '&:hover': {
+            color:'#1CA78B',
+        }
+    },
+    info:{
+        fontSize: '18px',
+        fontFamily: 'Arial, Helvetica, sans-serif',
+        fontWeigth: 'bold',
+        color: '#FFF',
+        width: '50%',
+        height: '50%',
+        // backgroundColor:'brown',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        '@media (max-width:600px)': {
+            fontSize: '0.5rem',
+            textAlign:'center'
+          },
+        '@media (min-width:600px)': {
+            fontSize: '0.8rem',
+            textAlign:'center'
+          },
+        '&:hover': {
+            color:'#1CA78B',
+        }
+    },
+})
+
+function Carde(props){    
+    const classes = useStyles();
+    return(
+        <Grid container id="main-div" xs={6}>
+            <Grid container item xs={7} sm={6} md={5} lg={3}>
+                <Card onClick={props.chama}>
                     <Card.Body>
-                        <div id="num"><Card.Text>{this.props.num}</Card.Text></div>
+                        <div className={classes.num}><Card.Text>{props.num}</Card.Text></div>
                         <div id="row_vertical"></div>
-                        <div id="info"><Card.Text>{this.props.info}</Card.Text></div>
+                        <div className={classes.info}><Card.Text>{props.info}</Card.Text></div>
                     </Card.Body>
                 </Card>
-            </div>
-        );
-    }
+            </Grid>
+        </Grid>
+);
 }
+
+export default Carde;
