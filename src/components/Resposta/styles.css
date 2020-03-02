@@ -70,14 +70,14 @@ div#btn_download{
     display: flex;
     justify-content: flex-end;
     width: 80%;
-    /* background-color: red; */
+    background-color: red;
 }
 
 div#btn_nvdetect{
     display: flex;
     justify-content: flex-end;
     width: 50%;
-    /* background-color: royalblue; */
+    background-color: royalblue;
 }
 
 span#title_result{

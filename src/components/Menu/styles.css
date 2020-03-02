@@ -86,23 +86,30 @@ div#upload{
 
 div#botao{
     height:150px;
-    /* background-color: aqua; */
+    /* background-color: #F16521; */
+    width: 58%;
     display: flex;
-    justify-items: flex-start;
-    align-content: center;
+    margin: 0;
+    justify-content: flex-start;
     padding-top: 20px;
 }
 
 div#btn_obj{
     /* background-color: aqua; */
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 10px;
+    flex-direction: column; 
+    align-items: center;
+    margin-left: 3px;
+    height: 480px;
+    width: 75%;
  
 }
 
 div#title_bnt_obj{
+    display: flex;
+    width: 58%;
+    /* background-color: blueviolet; */
+    justify-content: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
