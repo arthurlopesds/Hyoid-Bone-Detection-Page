@@ -3,6 +3,7 @@ import {Card} from 'react-bootstrap'
 import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/core/styles'
 
+
 import './styles.css';
 
 
@@ -20,9 +21,7 @@ const useStyles = makeStyles({
         '@media (max-width:600px)': {
             fontSize: '2.0rem',
           },
-        '&:hover': {
-            color:'#1CA78B',
-        }
+
     },
     info:{
         fontSize: '18px',
@@ -43,9 +42,6 @@ const useStyles = makeStyles({
             fontSize: '0.8rem',
             textAlign:'center'
           },
-        '&:hover': {
-            color:'#1CA78B',
-        }
     },
 })
 
@@ -56,9 +52,11 @@ function Carde(props){
             <Grid container item xs={7} sm={6} md={5} lg={3}>
                 <Card onClick={props.chama}>
                     <Card.Body>
-                        <div className={classes.num}><Card.Text>{props.num}</Card.Text></div>
+                    
+                        <div id="info" className={classes.num}><Card.Text>{props.num}</Card.Text></div>
                         <div id="row_vertical"></div>
-                        <div className={classes.info}><Card.Text>{props.info}</Card.Text></div>
+                        <div id="num" className={classes.info}><Card.Text>{props.info}</Card.Text></div>
+
                     </Card.Body>
                 </Card>
             </Grid>
