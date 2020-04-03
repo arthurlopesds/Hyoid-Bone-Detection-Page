@@ -83,6 +83,17 @@ const useStyles = makeStyles(theme =>({
         width:'100%',
         height:'100%',
         
+    },
+    descTxt:{
+        display:'flex',
+        fontFamily:'Arial, Helvetica, sans-serif',
+        fontWeight:'bold',
+        textAlign:'center',
+        marginTop:'7%',
+        backgroundColor:' #1CA78B',
+        color:'#fff',
+        fontSize:'20px'
+
     }
 
 }))

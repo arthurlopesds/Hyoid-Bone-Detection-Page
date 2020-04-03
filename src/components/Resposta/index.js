@@ -41,7 +41,8 @@ function Resposta(props){
                 <span className={classes.title_desc}>Descrição</span>
                 
                 <Grid item className={classes.descInterno}>
-                        <span>{result}</span>
+                        <span className={classes.descTxt}>{result}</span>
+                        {/* <span className={classes.descTxt} >DESLOCAMENTO VERTICAL: 45.35 mm</span> */}
                 </Grid>
                 
                 <Grid item className={classes.btn_nvdetect}>

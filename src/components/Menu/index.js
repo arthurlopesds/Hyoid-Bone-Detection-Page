@@ -150,8 +150,12 @@ export default function Body() {
 
     const onChange = e =>{
         setFile(e.target.files[0]);
+        console.log(e.target.files[0])
+        // setFilename(e.target.files[0].name);
         if (e.target.files[0] === undefined){
             setFilename('Escolha seu arquivo')
+            // setSeverity('info')
+            // setMessage('É preciso escolher um arquivo')
         }else{
             setFilename(e.target.files[0].name);
          }
@@ -174,13 +178,13 @@ export default function Body() {
 
             setUploadedFile({fileName,filePath});
 
-            setMessage('File Uploaded')
+            setMessage('Arquivo enviado com sucesso!')
             setSeverity('success')
-            setFilename('Escolha seu arquivo')
+            
         }catch(err){
             if (err.response.status === 500){
                 setMessage('DEU B.O NO SERVIDOR');
-                setSeverity('error')
+                // setSeverity('error')
             }else{
                 setMessage(err.response.data.msg);
                 setSeverity('error')
@@ -208,7 +212,7 @@ export default function Body() {
                   },
                   
               
-              })
+               })
 
             var blob = new Blob( [ response.data], {type: "video/mp4"} );
             
@@ -219,6 +223,7 @@ export default function Body() {
 
             setLoading(false);
             setOpen(true);
+            setFilename('Escolha seu arquivo')
             // writeToFile(myFileEntry,blob)
           
             
@@ -236,7 +241,7 @@ export default function Body() {
   return (
     <Grid className={classes.main} >
         
-        <Grid item className={classes.mainCard} md={12}>
+        <Grid item className={classes.mainCard} xs={12} >
             <Carde num="1" info="Selecione o arquivo a ser detectado" chama={handleChange}/>
             <Carde num="2" info="Começar a Detecção" chama={handleUpload}/>
             
@@ -264,7 +269,7 @@ export default function Body() {
                 <div className={classes.textSlide}>
                     <header>
                         <div id="txt_header">
-                            <h1>Detecção em imagens utilizando</h1>
+                            <h1>Detecção em imagem e vídeo utilizando</h1>
                             <h4>YOLO</h4>
                         </div>
                     </header>
