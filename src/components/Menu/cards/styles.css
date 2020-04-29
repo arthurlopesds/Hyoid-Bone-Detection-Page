@@ -1,6 +1,6 @@
 div#main-div{
     height: 30%;
-    width: 80%;
+    width: 30%;
     /* background-color:rgba(239,140,89, 0.8); */
     border-radius: 10px 10px;
     display: flex;
@@ -8,6 +8,7 @@ div#main-div{
     align-items: center;
     margin-bottom: 2px;
     /*rgba(254,161,25, 0.6);*/
+  
 
 }
 

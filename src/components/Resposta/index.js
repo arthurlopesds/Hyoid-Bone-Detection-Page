@@ -10,7 +10,10 @@ function Resposta(props){
 
     let URL = window.URL.createObjectURL(props.bblob);
     let URL_download = props.download;
-    let result = props.result
+    let result = props.result.split('mm')
+    let dVert =  result[0]
+    let dHor = result [1] 
+    // console.log(result.split('mm'))
     // var video = document.getElementById('player')
     // var video = document.getElementById('')
     // console.log(video)
@@ -41,7 +44,9 @@ function Resposta(props){
                 <span className={classes.title_desc}>Descrição</span>
                 
                 <Grid item className={classes.descInterno}>
-                        <span className={classes.descTxt}>{result}</span>
+                        {/* <span className={classes.descTxt}>{result}</span> */}
+                        <span className={classes.descTxt}>{dVert} mm</span>
+                        <span className={classes.descTxt}>{dHor} mm</span>
                         {/* <span className={classes.descTxt} >DESLOCAMENTO VERTICAL: 45.35 mm</span> */}
                 </Grid>
                 

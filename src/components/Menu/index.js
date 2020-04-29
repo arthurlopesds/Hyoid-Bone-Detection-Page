@@ -30,16 +30,17 @@ const useStyles = makeStyles( theme => ({
 
     mainCard:{
         width: '70%',
-        backgroundColor:'rgba(239,140,89,0)',
+        // backgroundColor:'rgba(239,140,89,0)',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
+        // backgroundColor:'red'
     },
 
     textSlide:{
         width: '100%',
-        height: '100%',
+        height: '900px',
         backgroundImage: 'url('+ second_Backgroud +')',
         backgroundSize: '500px',
         backgroundColor: '#FFF',
@@ -50,12 +51,13 @@ const useStyles = makeStyles( theme => ({
 
     div_main_up:{
         // backgroundColor:'#f23',
-        height:'200px',
+        height:'500px',
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
         justifyContent:'center',
-        marginRight:'2px'
+        marginRight:'2px',
+        
     },
 
     div_up: {
@@ -106,6 +108,25 @@ const useStyles = makeStyles( theme => ({
     },
     modalRoot:{
         background: 'rgba(255,255,255,0.2)',
+    },
+    msgDIV:{
+        display:'flex',
+        // backgroundColor:'black',
+        width:'100%',
+        // height:'10%',
+        justifyContent:'center',
+        alignItems:'center',
+        marginBottom:'10px'
+    },
+    uploadDIV:{
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'center',
+        width:'100%',
+        height:'30%',
+        // backgroundColor:'orange ',
+        marginBottom:'200px'
     }
 
 }))
@@ -239,9 +260,9 @@ export default function Body() {
     }
 
   return (
-    <Grid className={classes.main} >
+    <Grid className={classes.main}  >
         
-        <Grid item className={classes.mainCard} xs={12} >
+        <Grid item className={classes.mainCard} xs={12}>
             <Carde num="1" info="Selecione o arquivo a ser detectado" chama={handleChange}/>
             <Carde num="2" info="Começar a Detecção" chama={handleUpload}/>
             
@@ -269,37 +290,43 @@ export default function Body() {
                 <div className={classes.textSlide}>
                     <header>
                         <div id="txt_header">
-                            <h1>Detecção em imagem e vídeo utilizando</h1>
+                            {/* <h1>Detecção em imagem e vídeo utilizando</h1> */}
+                            <h1>Detecção em vídeo utilizando</h1>
                             <h4>YOLO</h4>
                         </div>
                     </header>
                     
-                    {message ? <Message severity={severity} msg = {message} /> : null}
+                    
                     <form onSubmit={onSubmit}>
                         <div className={classes.div_main_up}>
-                            <input
-                                // accept="image/* , video/mp4"
-                                className={classes.input}
-                                id="contained-button-file"
-                                type="file"
-                                onChange={onChange}
-                                
-                            />
-                            <label htmlFor="contained-button-file">
-                                <div className={classes.div_up}>
-                                    <div className={classes.div_arrow} />
-                                    <span className={classes.text_up}>
-                                        {filename}
-                                    </span>
-                                    <ArrowUpwardIcon className={classes.arrow} />
-                                </div>
-                            </label>
-                            <FormControl >
-                                <input type="submit" value="Enviar" className="btn btn-primary btn-block mt-4"/>
-                            </FormControl>
+                            <div className={classes.msgDIV}>
+                                {message ? <Message severity={severity} msg = {message} /> : null}
+                            </div>
+                            <div className={classes.uploadDIV}>
+                                <input
+                                    // accept="image/* , video/mp4"
+                                    className={classes.input}
+                                    id="contained-button-file"
+                                    type="file"
+                                    onChange={onChange}
+                                    
+                                />
+                                <label htmlFor="contained-button-file">
+                                    <div className={classes.div_up}>
+                                        <div className={classes.div_arrow} />
+                                        <span className={classes.text_up}>
+                                            {filename}
+                                        </span>
+                                        <ArrowUpwardIcon className={classes.arrow} />
+                                    </div>
+                                </label>
+                                <FormControl >
+                                    <input type="submit" value="Enviar" className="btn btn-primary btn-block mt-4"/>
+                                </FormControl>    
+                            </div>
                         </div>
                     </form>
-                    <div id="btn_obj">
+                    {/* <div id="btn_obj">
                         <div id="title_bnt_obj">Objetos a detectar</div>
                         <div id="botao">
                             <div >
@@ -314,7 +341,7 @@ export default function Body() {
                                 </ButtonToolbar>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     
                 </div>
             </Slide>

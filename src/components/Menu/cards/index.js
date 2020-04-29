@@ -35,21 +35,22 @@ const useStyles = makeStyles({
         justifyContent: 'center',
         alignItems: 'center',
         '@media (max-width:600px)': {
-            fontSize: '0.5rem',
+            fontSize: '0.4rem',
             textAlign:'center'
           },
         '@media (min-width:600px)': {
-            fontSize: '0.8rem',
+            fontSize: '0.7rem',
             textAlign:'center'
           },
     },
+   
 })
 
 function Carde(props){    
     const classes = useStyles();
     return(
-        <Grid container id="main-div" xs={6}>
-            <Grid container item xs={7} sm={6} md={5} lg={3}>
+        <Grid container id="main-div" className={classes.mdiv} xs={2} >
+            <Grid container item >
                 <Card onClick={props.chama}>
                     <Card.Body>
                     
